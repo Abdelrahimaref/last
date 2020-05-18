@@ -35,7 +35,7 @@
                     <div class="col-md-12 text-center position-relative">
                         <div class="card mx-auto">
                             <h2 class="card_title">Colis en attente</h2>
-                            <div class="text-center" style="margin-bottom: 20px;">
+                            <div class="badge" data-badge="!" style="margin-bottom: 20px;">
                                 <img src="icon-box.png" alt="" style="width:170px">
                             </div>
                             <p class="mt-0 mb-2 paragraph">Vous avez (1) colis en attente, prêt pour la livraison. Utilisez votre code pour suivre et réceptionner votre colis.</p>
@@ -56,15 +56,8 @@
                     <div class="col-md-12 text-center position-relative">
                         <div class="card mx-auto text-center bg-white border-0 p-5">
                             <div class="text-center">
-                                <div class="gooey loader">
-                                    <span class="dot"></span>
-                                    <div class="dots">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <img src="check-circle-regular.png" class="hidden myImg" style="width: 80px;"> 
+                                <div class="loader"></div>
+                                <img src="check-circle-regular.png" class="myImg" style="width: 80px;"> 
                             </div>
                             <ul class="pt-5 text-center">
                                 <li class="li">Suivi de votre colis...</li>
@@ -131,19 +124,19 @@
                                 <img src="samsung-s9.png" alt="">
                             </div>
                             <div class="questons">
-                                <div class="question-one">
+                                <div class="question question-one">
                                     <h2 class="h3 mb-3 pt-4">
                                         Comment souhaitez-vous recevoir votre colis?
                                     </h2>
                                     <div class="question-answers">
                                         <input type="radio" id="question-1">
-                                        <label for="question-1">Je veux qu'il soit livré</label>
+                                        <label for="question-1" class="label">Je veux qu'il soit livré</label>
                                         <input type="radio" id="question-1s">
                                         <label for="question-1s" id="question-1s-label">Je veux qu'il soit livré</label>
                                         <p id="error-message" class="hidden pt-4" style="color: #f00;">Votre colis est déjà dans l'entrepôt de livraison</p>
                                     </div>                                   
                                 </div>
-                                <div class="hidden question-two">
+                                <div class="hidden question question-two">
                                     <h2 class="h3 mb-3 pt-4">
                                         Où voulez-vous qu'il soit livré?
                                     </h2>
@@ -154,7 +147,7 @@
                                         <label for="two2">Au travail</label>
                                     </div>                                   
                                 </div>
-                                <div class="hidden question-three">
+                                <div class="hidden question question-three">
                                     <h2 class="h3 mb-3 pt-4">
                                         Quand voulez-vous qu'il soit livré?
                                     </h2>
@@ -185,15 +178,8 @@
                     <div class="col-md-12 text-center position-relative">
                         <div class="card mx-auto text-center bg-white border-0">
                             <div class="text-center">
-                                <div class="gooey loader">
-                                    <span class="dot"></span>
-                                    <div class="dots">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <img src="check-circle-regular.png" class="hidden myImg" style="width: 80px;"> 
+                                <div class="loader"></div>
+                                <img src="check-circle-regular.png" class="myImg" style="width: 80px;"> 
                             </div>
                             <ul class="pt-5 text-center">
                                 <li class="li">Suivi de votre colis...</li>

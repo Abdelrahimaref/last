@@ -25,6 +25,24 @@ body {
 .paragraph {
   font-size: 14px;
 }
+.myImg {
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: all .3s ease .5s;
+  -o-transition: all .3s ease .5s;
+  transition: all .3s ease .5s;
+}
+.well .myImg {
+  -webkit-transform: scale(1, 1) !important;
+  -ms-transform: scale(1, 1) !important;
+  transform: scale(1, 1) !important;
+}
+.play .myImg {
+  -webkit-transform: scale(1, 1) !important;
+  -ms-transform: scale(1, 1) !important;
+  transform: scale(1, 1) !important;
+}
 .my-button {
   display: inline-block;
   width: 100%;
@@ -235,6 +253,25 @@ label::before,label::after {
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
 }
+.badge {
+  display: inline-block;
+  margin-bottom: 20px;
+  position: relative;
+}
+.badge::after {
+  content: '!';
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #ff0052;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  top: -10px;
+  right: 70px;
+}
 .hidden {
   display: none;
 }
@@ -252,6 +289,10 @@ button {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+a:hover {
+  text-decoration: none ;
+  color: #FFF ;
 }
 /****** Footer *****/
 footer {
@@ -346,84 +387,26 @@ footer {
 
 
 /*************** Loader ***********/
-.gooey {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  width: 142px;
-  height: 40px;
-  margin: -20px 0 0 -71px;
-  background: #fff;
-  filter: contrast(20);
-}
-.gooey .dot {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 12px;
-  left: 15px;
-  filter: blur(4px);
-  background: #000;
-  border-radius: 50%;
-  transform: translateX(0);
-  animation: dot 2.8s infinite;
-}
-.gooey .dots {
-  transform: translateX(0);
-  margin-top: 12px;
-  margin-left: 31px;
-  animation: dots 2.8s infinite;
-}
-.gooey .dots span {
-  display: block;
-  float: left;
-  width: 16px;
-  height: 16px;
-  margin-left: 16px;
-  filter: blur(4px);
-  background: #000;
-  border-radius: 50%;
-}
-@-moz-keyframes dot {
-  50% {
-    transform: translateX(96px);
-  }
-}
-@-webkit-keyframes dot {
-  50% {
-    transform: translateX(96px);
-  }
-}
-@-o-keyframes dot {
-  50% {
-    transform: translateX(96px);
-  }
-}
-@keyframes dot {
-  50% {
-    transform: translateX(96px);
-  }
-}
-@-moz-keyframes dots {
-  50% {
-    transform: translateX(-31px);
-  }
-}
-@-webkit-keyframes dots {
-  50% {
-    transform: translateX(-31px);
-  }
-}
-@-o-keyframes dots {
-  50% {
-    transform: translateX(-31px);
-  }
-}
-@keyframes dots {
-  50% {
-    transform: translateX(-31px);
-  }
+.loader {
+  width: 80px;
+  height: 80px;
+  margin: 0px auto -100px auto;
+  background-color: #555;
+  border-radius: 100%;
+  animation: load 1.5s infinite ease-in-out;
+  transition: all .3s ease 0s;
 }
 
+@keyframes load {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
 
 
