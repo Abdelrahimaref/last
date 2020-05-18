@@ -253,6 +253,17 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+/****** Footer *****/
+footer {
+  background-color: #353533;
+  padding: 20px;
+  color: #FFF;
+  text-align: center;
+}
+.foot {
+  font-size: 18px ; 
+  margin-bottom: 30px;
+}
 @media(min-width:768px) {
   .icon_image {
     height: auto;
@@ -262,6 +273,11 @@ a {
     padding:24px 30px 30px 30px ;
     min-width: 400px;
     max-width: 400px;
+  }
+  footer {
+    margin-top: 40px;
+    padding-top: 37px;
+    padding-bottom: 7px;
   }
 }
 @media(min-width:560px) {
@@ -279,6 +295,10 @@ a {
   }
   .h3 {
     font-size: 16px;
+  }
+  .foot {
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -403,3 +423,6 @@ a {
     transform: translateX(-31px);
   }
 }
+
+
+
