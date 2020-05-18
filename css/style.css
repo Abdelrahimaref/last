@@ -259,6 +259,7 @@ footer {
   padding: 20px;
   color: #FFF;
   text-align: center;
+  margin-top: 50px;
 }
 .foot {
   font-size: 18px ; 
@@ -275,7 +276,7 @@ footer {
     max-width: 400px;
   }
   footer {
-    margin-top: 40px;
+    margin-top: 100px;
     padding-top: 37px;
     padding-bottom: 7px;
   }

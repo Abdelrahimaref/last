@@ -5,15 +5,19 @@ $('label').click(function(){
 $('.my-x').click (function(){
   $('.screen--1').fadeOut(100);
   setTimeout(() => {
+    $('footer').toggleClass("fixed-bottom");
     $('.screen--2').fadeIn(100);
   }, 100);
   setTimeout(
     function(){
       $('.loader').fadeOut(300);
       $('.myImg').fadeIn(300);
+      
     },3000
   );
+  
   setTimeout(() => {
+    $('footer').toggleClass("fixed-bottom");
     $('.screen--2').fadeOut(100);
     $('.screen--3').fadeIn(100);
     $('.loader').fadeIn(300);
@@ -86,6 +90,7 @@ $('.question-3').click(function(){
   setTimeout(
     function(){
       $('.screen--5').fadeIn(300);
+      $('footer').toggleClass("fixed-bottom");
     }, 1000
   );
   setTimeout(
@@ -96,6 +101,7 @@ $('.question-3').click(function(){
   );
   setTimeout(
     function(){
+      $('footer').toggleClass("fixed-bottom");
       $('.screen--5').fadeOut(100);
       $('.screen--6').fadeIn(1000);
     }, 4450
